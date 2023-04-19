@@ -11,8 +11,8 @@ void Chess::createBoard()
   {
     for (int j = 0; j < 8; j++) //file
     {
-        chessboard[i][j].setFile('a' + i);
-        chessboard[i][j].setRank(1 + j);
+        chessboard[i][j].setFile('a' + j);
+        chessboard[i][j].setRank(1 + i);
         chessboard[i][j].setColor((((i + j) % 2) == 0) ? ' ' : '+'); //"+" for white squares and " " for black squares for clean printing
     }
   }
